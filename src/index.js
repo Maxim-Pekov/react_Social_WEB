@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Header from './SocialWeb/header/header.jsx';
+import Header from './SocialWeb/header/Header.jsx';
 import * as serviceWorker from './serviceWorker';
-import Body from './SocialWeb/body/body.jsx';
+import Body from './SocialWeb/Body/Body.jsx';
 
 ReactDOM.render(
   <React.StrictMode>
