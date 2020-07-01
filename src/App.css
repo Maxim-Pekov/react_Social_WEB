@@ -1,3 +1,9 @@
+ul li {
+  color: red;
+  font-size: larger;
+  margin: 20px 0;
+  list-style-type: upper-alpha;
+}
 .App {
   text-align: center;
 }

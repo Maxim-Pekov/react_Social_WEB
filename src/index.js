@@ -2,10 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Header from './SocialWeb/header/header.jsx';
 import * as serviceWorker from './serviceWorker';
+import Body from './SocialWeb/body/body.jsx';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Header/>
+    <Body />
     <App />
   </React.StrictMode>,
   document.getElementById('root')

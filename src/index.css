@@ -1,13 +1,110 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+header {
+  background-color: #4a76a8;
+  height: 42px;  
+  position: sticky;
+  top: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header .head-wrapper{
+  width: 990px;
+  height: 42px;
+  
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: 'n l b' 'n l b';
+  grid-template-columns: 1fr 1fr 550px; 
+  position: sticky;
 }
+header .head-nav{
+  display: flex;
+}
+
+header .head-logo-img{
+  width: 24px;
+  height: 24px;
+  margin: 8px 10px 8px 0px;
+  padding: 0 3px;
+  padding-top: 5px;
+  text-align: center;
+  font-weight: 900;
+  background-color: #fff;
+  border-radius: 30%;
+  justify-items: center;
+  grid-area: n;
+}
+
+header .head-logo-name{
+  color: #fff;
+  text-align: center;
+  padding: 9px 0 0 10px;
+  font-weight: 700;
+}
+header .head-logo{
+  color: #4a76a8;
+  padding: 0 0 0 15px;
+  margin-top: 7px;
+  justify-content: center;
+  height: 28px;
+  width: 210px;
+  border-radius: 14px;
+  background-color: #2d4764;
+  font-weight: 500;
+  grid-area: l;
+}
+header .head-body{
+  color: #fff;
+  padding: 0 0 0 20px;
+  margin-top: 7px;
+  justify-content: center;
+  align-content: space-between;
+  display: flex;
+  right: 0%;
+  grid-area: b;
+}
+
+.body {
+  padding-top: 15px;
+  background-color: rgb(232, 240, 248);
+}
+
+.body .body-wrapper{
+  width: 990px;
+  height: 2000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: 'n l b' 'n l b';
+  grid-template-columns: 1fr 1fr 550px;  
+}
+.body .body-wrapper .body-nav{
+  grid-area: n;
+}
+.body .body-wrapper .body-nav div{
+  display: flex;
+  width: 122px;
+  height: 28px;  
+  align-items: center;
+  color: #4a76a8;
+  font-weight: 600;
+}
+.body .body-wrapper .body-logo{
+  width: 225px;
+  background-color: #fff;
+  border-radius: 4px;
+  grid-area: l;
+}
+.body .body-wrapper .body-logo img{
+  width: 195px;
+  padding: 15px;
+}
+.body .body-wrapper .body-body{
+  width: 550px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-left: 15px;
+  grid-area: b;
+}
+
